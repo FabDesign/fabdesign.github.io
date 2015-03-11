@@ -1,4 +1,38 @@
 body {
 	background-color:#eeeeee;
 	color: #595959;
+	text-align: center;
+}
+h1 {
+	color:#bbb;
+	font-weight:bold;
+	font-size: 40px;
+}
+#slogan {
+	font-style: italic;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+
+#hero_image {
+	background: url("../images/flower_pot.jpg");
+	background-repeat: no-repeat;
+	background-size: 500px;
+	background-position: center; 
+	width:400px;
+}
+.text_on_image {
+
+	background-color: black;
+	padding: 200px;
+	opacity: 0.4;
+
+}
+.text_on_image p {
+	color:#595959;
+	text-align: left;
+
 }
