@@ -18,21 +18,29 @@ img {
 	width: 500px;
 }
 .text_on_image {
+	padding: 250px 230px 0px 10px ;
 
-	background-color: black;
-	padding: 200px;
-	opacity: 0.4;
 }
 .text_on_image p {
-	color:#595959;
+	background-color: black;
+	opacity: 0.5;
+	color:#fff;
+	font-family: arial;
+	font-size: 25px;
 	text-align: left;
+	padding: 10px 10px;
+
+
 }
 #hero_image {
-	background: url("../images/flower_pot.jpg");
-	background-repeat: no-repeat;
-	background-size: 500px;
-	background-position: center; 
-	width:400px;
+	background: url("../images/flower_pot.jpg") no-repeat center center; 
+	background-size: cover;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-o-background-size:cover;
+	width:500px;
+	height: 375px;
+	margin: 0 auto;
 }
 #slogan {
 	font-style: italic;
