@@ -1,13 +1,13 @@
 body {
-	background-color:#eeeeee;
+	background-color: #eee;
 	color: #595959;
 	text-align: center;
 	margin: 0;
 	padding: 0;
 }
 h1 {
-	color:#bbb;
-	font-weight:bold;
+	color: #bbb;
+	font-weight: bold;
 	font-size: 40px;
 	margin: 0;
 }
@@ -15,16 +15,16 @@ ul {
 	list-style-position: inside;
 }
 img {
-	width: 500px;
+	width: 50%;
 }
 .text_on_image {
 	padding: 250px 230px 0px 10px ;
 
 }
 .text_on_image p {
-	background-color: black;
+	background-color: #000;
 	opacity: 0.5;
-	color:#fff;
+	color: #fff;
 	font-family: arial;
 	font-size: 25px;
 	text-align: left;
@@ -38,7 +38,7 @@ img {
 	-webkit-background-size:cover;
 	-moz-background-size: cover;
 	-o-background-size:cover;
-	width:500px;
+	width:50%;
 	height: 375px;
 	margin: 0 auto;
 }
@@ -46,7 +46,7 @@ img {
 	font-style: italic;
 }
 #wrapper {
-	width:1000px;
+	width: 85%;
 	margin: 0 auto;
 	background-color: #ccc;
 }
