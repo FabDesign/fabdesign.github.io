@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Damion);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+
+body {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #595959;
+}
+
+#featured_text {
+	width: 400px;
+	margin: 0 auto;
+	text-align: left;
+}
+#featured_text h1 {
+	font-family: Damion, serif;
+	font-size: 36px;
+	margin: 0;
+}
+#featured_text p {
+	font-family: Lato, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+#featured_text2 {
+	width: 400px;
+	margin: 0 auto;
+	text-align: left;
+}
+#featured_text2 h1 {
+	font-family: Lato, sans-serif;
+	font-size: 30px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+#featured_text2 p {
+	font-family: Georgia, serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+#featured_text3 {
+	width: 400px;
+	margin: 0 auto;
+	text-align: left;
+}
+#featured_text3 h1 {
+	font-family: Raleway, serif;
+	font-size: 30px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+#featured_text3 p {
+	font-family: Lato, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+img {
+	width: 50%;
+}
+
+
+.text_on_image {
+	padding: 250px 230px 0px 10px ;
+}
+.text_on_image p {
+	background-color: #000;
+	opacity: 0.5;
+	color: #fff;
+	font-family: arial;
+	font-size: 25px;
+	text-align: left;
+	padding: 10px 10px;
+}
+#hero_image {
+	background: url("../images/flower_pot.jpg") no-repeat center center; 
+	background-size: cover;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-o-background-size:cover;
+	/*width: 100%;*/
+	margin: 0 auto;
+}
+#wrapper {
+	width: 85%;
+	margin: 0 auto;
+	background-color: #eee;
+}
