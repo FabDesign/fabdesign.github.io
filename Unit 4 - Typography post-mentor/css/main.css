@@ -5,13 +5,10 @@
 - fix <hr>
 - is there possibly an issue with linking an entire div?
 - How can I resize the font-size automatically according to the size of the screen?
+- What is the blak line in the Hero Imag container (on the left and right)?
 */
 
 
-
-
-@import url(http://fonts.googleapis.com/css?family=Damion);
-@import url(http://fonts.googleapis.com/css?family=Lobster);
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
@@ -103,7 +100,7 @@ hr {
 	float: left;
 }
 .circle_content {
-	padding: 20px;
+	padding: 10%;
 }
 .circle_content p {
 	text-align: justify;
