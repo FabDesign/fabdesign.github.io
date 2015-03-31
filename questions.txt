@@ -5,3 +5,10 @@ Unit 4:
 Unit 5: 
 - Are we going to learn to integrate a feature such as Google Analytics to our site?
 - How about an add-on which lets users leave comments?
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
