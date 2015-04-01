@@ -1,18 +1,17 @@
-
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
-
+header {
+	margin-bottom: 40px;
+}
 nav {
 	float:right;
-	height: 100px;
 }
-
 nav ul {
 	list-style: none;
 }
 nav li {
 	display: inline-block;
-	width: 100px;
+	background-color: red;
 }
 nav li a, nav li p {
 	color:#595959;
@@ -30,21 +29,29 @@ nav li a:hover {
 }
 
 section {
-	height: 300px;
-	background-color: #eee;
+
 }
 section p {
-	margin-top: 60px;
 }
+
 #logo {
 	width: 110px;
 	float: left;
 	margin-top: 30px;
 }
-#wrapper {
+.pagewrapper {
+	width: 100%;
+}
+.contentwrapper  {
 	width: 1000px;
 	margin: 0 auto;
+	padding: 0 20px;
+	background-color: green;
 }
+.gray_bg {
+	background-color: #eee;
+}
+
 .clearfix:after {
   visibility: hidden;
   display: block;
