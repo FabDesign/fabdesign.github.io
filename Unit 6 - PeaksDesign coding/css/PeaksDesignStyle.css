@@ -2,9 +2,14 @@
 /* 
 Questions
 - How can I close the gap between the nav elements.
-
+- Set the font family with the universal selector (I tried it - see below - but it doesn''t work).
 
 */
+
+* {
+	font-family: Lato, sans-serif;
+}
+
 header {
 	margin-bottom: 40px;
 }
@@ -39,7 +44,7 @@ section {
 section p {
 }
 #hero_image{
-	background: url("../images/city.svg") no-repeat center center; 
+	background: url("../images/city.svg") no-repeat left center; 
 	/* background-size: cover;
 	-webkit-background-size:cover;
 	-moz-background-size: cover;
@@ -47,8 +52,35 @@ section p {
 	height: 400px;
 	position: relative;
 }
-#hero_image img {
-	width: 600px;
+#hero_image_textbox {
+	position: absolute;
+	bottom: 50px;
+	right: 40px;
+	background-color: rgba(100%,100%,100%,.3);
+	padding: 20px; 
+	width: 350px;
+}
+#hero_image_textbox h1 {
+	color:#595959;
+	font-family: Lato, sans-serif;
+	font-size: 1.4em;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+#hero_image_textbox p {
+	color:#595959;
+	font-family: Georgia, serif;
+	font-size: 0.9em;
+	margin-bottom: 10px;
+	line-height: 1.5em;
+}
+#hero_image_textbox a {
+	color:#595959;
+	font-family: Lato, sans-serif;
+	font-size: 1.1em;
+	display:inline-block;
+	text-align: right;
+	
 }
 #logo {
 	width: 110px;
