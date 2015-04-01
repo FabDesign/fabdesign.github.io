@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
+/* 
+Questions
+- How can I close the gap between the nav elements.
 
+
+*/
 header {
 	margin-bottom: 40px;
 }
@@ -11,7 +16,7 @@ nav ul {
 }
 nav li {
 	display: inline-block;
-	background-color: red;
+	/* background-color: red;*/
 }
 nav li a, nav li p {
 	color:#595959;
@@ -33,7 +38,18 @@ section {
 }
 section p {
 }
-
+#hero_image{
+	background: url("../images/city.svg") no-repeat center center; 
+	/* background-size: cover;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-o-background-size:cover; */
+	height: 400px;
+	position: relative;
+}
+#hero_image img {
+	width: 600px;
+}
 #logo {
 	width: 110px;
 	float: left;
@@ -46,7 +62,7 @@ section p {
 	width: 1000px;
 	margin: 0 auto;
 	padding: 0 20px;
-	background-color: green;
+	/* background-color: green;*/
 }
 .gray_bg {
 	background-color: #eee;
