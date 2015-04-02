@@ -2,15 +2,27 @@
 /* 
 Questions
 - How can I close the gap between the nav elements.
+	Set nav li to block and float:left and nav li a to block / apply clearfix class to ul
 - Set the font family with the universal selector (I tried it - see below - but it doesn''t work).
+	Set the universal selectors to the body tag and then inherit the font family etc. to the anchor tag as they don't inherit it
 - usage of #hero_image_textbox #hero_image_link a 
+	Use the only the last one
+	Thenounproject.com
 - Resource for free and license-free icons, e.g. for LinkedIn, FB,
+	Use 'Guidelines for f Logo' for Facebook. 
 - Problem with section and footer formatting / inline divs still for formatting necessary?
-- footer margin not working
+	Overflow: auto
+--> rba is never in percent but from 0 - 255!
+
+Try to apply the yellow on: Headlines bottom border, windows in Illustration, Logo
+
 */
 
-* {
+body {
 	font-family: Lato, sans-serif;
+}
+a {
+	font-family: inherit;
 }
 
 #top_banner {
@@ -23,16 +35,15 @@ nav ul {
 	list-style: none;
 }
 nav li {
-	display: inline-block;
-	/* background-color: red;*/
+	display: block;
+	float: left;
 }
 nav li a, nav li p {
 	color:#595959;
 	text-decoration: none;
 	text-transform: uppercase;
-	display: inline-block;
+	display: block;
 	padding: 63px 28px 21px;
-	font-family: Lato, sans-serif;
 }
 nav li p {
 	background-color: #ddd;
@@ -43,7 +54,6 @@ nav li a:hover {
 
 .text_column_home, #text_column_footer {
 	box-sizing: border-box;
-	font-family: Lato, sans-serif;
 	color:#595959;
 	float: left;
 	width: 33.333%;
@@ -54,6 +64,9 @@ nav li a:hover {
 	font-size: 1.4em;
 	margin-bottom: 20px;
 	font-weight: bold;
+	display: inline-block;
+	padding-bottom: 7px;
+	border-bottom: 5px solid #F5EE59;
 }
 #social_icons {
 	float:right;
@@ -74,16 +87,19 @@ nav li a:hover {
 	position: absolute;
 	bottom: 50px;
 	right: 40px;
-	background-color: rgba(100%,100%,100%,.3);
+	background-color: rgba(255,255,255,.3);
 	padding: 20px; 
 	width: 350px;
 }
 #hero_image_textbox h1 {
 	color:#595959;
-	font-family: Lato, sans-serif;
 	font-size: 1.4em;
 	margin-bottom: 20px;
 	font-weight: bold;
+	display: inline-block;
+	padding-bottom: 7px;
+	border-bottom: 5px solid #F5EE59;
+	
 }
 #hero_image_textbox p {
 	color:#595959;
@@ -98,7 +114,6 @@ nav li a:hover {
 /* #hero_image_textbox #hero_image_link a { */
 #hero_image_link a {
 	color:#595959;
-	font-family: Lato, sans-serif;
 	font-size: 1.1em;
 	text-decoration: none;
 }
@@ -131,7 +146,8 @@ nav li a:hover {
 	font-size: 0.9em;
 }
 #footer_section {
-	margin: 40px 0;
+	overflow: auto;
+	margin: 140px 0;
 }
 #footer_section p {
 	font-family: Georgia;
