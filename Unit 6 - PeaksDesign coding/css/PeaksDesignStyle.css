@@ -42,11 +42,12 @@ nav li a:hover {
 }
 
 .text_column_home, #text_column_footer {
+	box-sizing: border-box;
 	font-family: Lato, sans-serif;
 	color:#595959;
 	float: left;
-	width: 323px;
-	padding: 5px;
+	width: 33.333%;
+	padding: 20px;
 	line-height: 1.5em;
 }
 .text_column_home h1, #text_column_footer h1 {
@@ -54,17 +55,14 @@ nav li a:hover {
 	margin-bottom: 20px;
 	font-weight: bold;
 }
-#text_column_footer {
-
-}
-
 #social_icons {
 	float:right;
-	margin-right: 100px;
+	margin-right: 40px;
 	margin-top: 40px;
 }
 #social_icons img {
-	width: 40px;
+	width: 30px;
+	margin: 0 5px;
 }
 
 #hero_image{
@@ -128,8 +126,16 @@ nav li a:hover {
 #middle_section {
 	margin: 40px 0;
 }
+#middle_section p {
+	font-family: Georgia;
+	font-size: 0.9em;
+}
 #footer_section {
 	padding: 40px 0;
+}
+#footer_section p {
+	font-family: Georgia;
+	font-size: 0.9em;
 }
 .clearfix:after {
   visibility: hidden;
