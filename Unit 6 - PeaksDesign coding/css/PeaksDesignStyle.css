@@ -145,9 +145,11 @@ nav li a:hover {
 	font-family: Georgia;
 	font-size: 0.9em;
 }
-#footer_section {
+.contentwrapper {
 	overflow: auto;
-	margin: 140px 0;
+}
+#footer_section {
+	margin: 40px 0;
 }
 #footer_section p {
 	font-family: Georgia;
