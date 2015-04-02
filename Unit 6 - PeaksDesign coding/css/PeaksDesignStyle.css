@@ -3,6 +3,9 @@
 Questions
 - How can I close the gap between the nav elements.
 - Set the font family with the universal selector (I tried it - see below - but it doesn''t work).
+- usage of #hero_image_textbox #hero_image_link a 
+- Resource for free and license-free icons, e.g. for LinkedIn, FB,
+- Problem with section and footer formatting / inline divs still for formatting necessary?
 
 */
 
@@ -35,20 +38,37 @@ nav li p {
 	background-color: #ddd;
 }	
 nav li a:hover {
-	background-color: #eee;
+	background-color: #faf7ac;
 }
 
-section {
+.text_column_home, #text_column_footer {
+	font-family: Lato, sans-serif;
+	color:#595959;
+	float: left;
+	width: 323px;
+	padding: 5px;
+	line-height: 1.5em;
+}
+.text_column_home h1, #text_column_footer h1 {
+	font-size: 1.4em;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+#text_column_footer {
 
 }
-section p {
+
+#social_icons {
+	float:right;
+	margin-right: 100px;
+	margin-top: 40px;
 }
+#social_icons img {
+	width: 40px;
+}
+
 #hero_image{
 	background: url("../images/city.svg") no-repeat left center; 
-	/* background-size: cover;
-	-webkit-background-size:cover;
-	-moz-background-size: cover;
-	-o-background-size:cover; */
 	height: 400px;
 	position: relative;
 }
@@ -74,13 +94,19 @@ section p {
 	margin-bottom: 10px;
 	line-height: 1.5em;
 }
-#hero_image_textbox a {
+#hero_image_link {
+	text-align: right;
+}
+/* #hero_image_textbox #hero_image_link a { */
+#hero_image_link a {
 	color:#595959;
 	font-family: Lato, sans-serif;
 	font-size: 1.1em;
-	display:inline-block;
-	text-align: right;
-	
+	text-decoration: none;
+}
+#hero_image_link a:hover {
+	border-bottom: 5px solid #faf7ac;
+	font-weight: bold;
 }
 #logo {
 	width: 110px;
@@ -99,7 +125,12 @@ section p {
 .gray_bg {
 	background-color: #eee;
 }
-
+#middle_section {
+	margin: 40px 0;
+}
+#footer_section {
+	padding: 40px 0;
+}
 .clearfix:after {
   visibility: hidden;
   display: block;
