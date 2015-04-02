@@ -6,14 +6,14 @@ Questions
 - usage of #hero_image_textbox #hero_image_link a 
 - Resource for free and license-free icons, e.g. for LinkedIn, FB,
 - Problem with section and footer formatting / inline divs still for formatting necessary?
-
+- footer margin not working
 */
 
 * {
 	font-family: Lato, sans-serif;
 }
 
-header {
+#top_banner {
 	margin-bottom: 40px;
 }
 nav {
@@ -131,7 +131,7 @@ nav li a:hover {
 	font-size: 0.9em;
 }
 #footer_section {
-	padding: 40px 0;
+	margin: 40px 0;
 }
 #footer_section p {
 	font-family: Georgia;
