@@ -24,10 +24,6 @@ body {
 a {
 	font-family: inherit;
 }
-
-#top_banner {
-	margin-bottom: 40px;
-}
 nav {
 	float:right;
 }
@@ -52,6 +48,18 @@ nav li a:hover {
 	background-color: #faf7ac;
 }
 
+.pagewrapper {
+	width: 100%;
+}
+.contentwrapper  {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0 20px;
+	overflow: auto;
+}
+.gray_bg {
+	background-color: #eee;
+}
 .text_column_home, #text_column_footer {
 	box-sizing: border-box;
 	color:#595959;
@@ -67,6 +75,9 @@ nav li a:hover {
 	display: inline-block;
 	padding-bottom: 7px;
 	border-bottom: 5px solid #F5EE59;
+}
+#top_banner {
+	margin-bottom: 40px;
 }
 #social_icons {
 	float:right;
@@ -126,27 +137,12 @@ nav li a:hover {
 	float: left;
 	margin-top: 30px;
 }
-.pagewrapper {
-	width: 100%;
-}
-.contentwrapper  {
-	width: 1000px;
-	margin: 0 auto;
-	padding: 0 20px;
-	/* background-color: green;*/
-}
-.gray_bg {
-	background-color: #eee;
-}
 #middle_section {
 	margin: 40px 0;
 }
 #middle_section p {
 	font-family: Georgia;
 	font-size: 0.9em;
-}
-.contentwrapper {
-	overflow: auto;
 }
 #footer_section {
 	margin: 40px 0;
