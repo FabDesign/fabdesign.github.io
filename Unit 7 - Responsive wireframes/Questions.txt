@@ -1,0 +1,1 @@
+Is it obvious enough that each section as a whole is clickable (= whole div linked)?
