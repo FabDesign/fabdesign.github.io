@@ -1,0 +1,17 @@
+http://froont.com/
+
+screensi.se
+
+
+SETTING THE FONT SIZE
+It should only be set once: In the body tag with 16px - everything else should be done with ems
+Then the golden ratio should be used.
+
+Use percentages for containers and semantic tags
+
+Use script to brink IE to this century.
+
+
+Responsive design: 
+Use meta tag in addition to the media queries.
+Add more padding around buttons in the mobile css so it's possible to tab it with the fingers
