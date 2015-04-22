@@ -2,9 +2,11 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
 /* Questions:
-	.contentwrapper  { width: auto; } <- is this a proper way to do it? It totally crashes if I type 100% instead.
-	#logo { display: inline-block; } doesn't work when resizing it back from mobile to tablet.
-	<hr> ok in unordered list in nav?
+	- .contentwrapper  { width: auto; } <- is this a proper way to do it? It totally crashes if I type 100% instead.
+	- #logo { display: inline-block; } doesn't work when resizing it back from mobile to tablet.
+	- <hr> ok in unordered list in nav?
+	- fix overlay text on hero image
+	- image strategy for loading quickly on mobile
 
 To do:
 - apply golden ratio everywhere
