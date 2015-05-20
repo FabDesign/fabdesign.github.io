@@ -164,7 +164,7 @@ Finally we have to create our styling. This contains beside the standard styling
 	width: 19px;
 	height: 3px;
 	margin: 4px 0;
-	background: rgb(0,0,0);
+	background: rgb(255,0,0);
 	z-index: 99;
 }
 
