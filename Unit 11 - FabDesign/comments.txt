@@ -1,0 +1,11 @@
+align hero image text to the left.
+put Read More button to the left as well.
+Modern woodworking: Make 3-column section out of it
+
+Oh what a mess section: make sure that's in one row only and that it's aligned with something above
+
+
+Check alignment form section to section (e.g. footer and the one section before that)
+
+
+Logo: Fiddle around with it a bit (e.g. align it properly with the nav; the g is sticking out from the bottom)
