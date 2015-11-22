@@ -1,0 +1,668 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+/*Lato font weights: 100, 300, 400, 700, 900*/
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+/*Raleway font weights: 100, 200, 300, 400, 500, 600, 700, 800, 900*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/*Open Sans font weights: 300, 400, 600, 700, 800*/
+
+/*
+To do:
+- apply golden ratio everywhere
+*/
+/*Questions
+- apply margin to sections
+- Padding strange: "Oh no - not again!"
+
+*/
+/*#JStest {
+	color: red;
+}
+#JStest.JStest_do {
+	color: blue;
+}*/
+body {
+	min-height: 1000px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color:#595959;
+	font-weight: 300;
+	/*background-color: #DDCBC3;*/
+	
+	-webkit-font-smoothing: antialiased;
+	/*background-attachment: fixed; */
+	/*-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-o-background-size:cover;*/
+}
+
+/*-------------- START: General items  --------------*/
+
+#logo_FAB {
+	font-family: Raleway;
+	font-weight: 900; color: #1abc9c;
+	background: #fff;
+	/*font-weight: 900; color: #2c3e50;*/
+}
+#logo_DESIGN {
+	/* Original logo color of Design part: 7f8c8d*/
+	font-family: Raleway;
+	font-weight: 600; color: #fff;
+	font-weight: 600; color: #ecf0f1;
+	background: #1abc9c;
+}
+
+a {
+	color:#8A8A8A;
+}
+h1 {
+	font-size: 2.2em;
+
+}
+h2 {
+	color: #8A8A8A;
+	font-size: 2.2em;
+}
+h3 {
+	font-size: 1.6em;
+	font-weight: ;
+}
+h4 {
+	font-size: 1.2em;
+	color: #8A8A8A;
+}
+p {
+	font-family: Georgia, serif;
+	font-size: 1em;
+}
+.pagewrapper {
+	width: 100%;
+}
+.contentwrapper  {
+	width: 70%;
+	margin: 0 auto;
+	padding: 0 1.25em;
+	overflow: auto;
+}
+.section_divider {
+	display: block;
+	border: 0;
+	height: 1px;
+	background-color: #eaeaea;
+	/*background-color: #f00;*/
+	margin: 0 10em;
+}
+.darker_by_2 {
+	background-color: rgba(0,0,0,.2);
+}
+.darker_by_4 {
+	background-color: rgba(0,0,0,.4);
+}
+	/*-------------- START: Buttons --------------*/
+	.button_align {
+		text-align: center;
+	}	
+	.red_button {
+		display: inline-block;
+		border-radius: 3px;
+		text-align: center;
+		padding: 1em 1em;
+		box-shadow: 2px 2px 1px rgba(0,0,0,.19);
+		background-color: #e74c3c;
+		color:#fff;
+		font-size: 1em;
+		text-decoration: none;
+		/*margin: 0.7em 0 0;*/
+	}
+	.red_button:hover, .red_button:active {
+		background-color: #d7422b;
+	}
+	/*-------------- END: Buttons --------------*/
+/*-------------- END: General items  --------------*/
+
+
+
+/* -------------- START: Dynamic header stuff ------------- */
+#top_bar_box {
+	position: fixed;
+	 -webkit-transition: background 0.2s;
+	transition: background 0.2s; 
+}
+	#top_bar_box.light_header {
+	 background: #34495e;
+	 background: #1abc9c;
+	}
+
+#logo {
+	display: inline-block;
+	font-size: 2em;
+	padding-top: 57px;
+}
+	#logo.logo_after_scroll {
+		font-size: 1.7em;
+		padding-top: 15px;
+	}	
+
+
+	nav.nav_after_scroll li a, nav.nav_after_scroll li p {
+		padding: 20px 28px 20px;
+		color:#fff;
+	}
+	nav.nav_after_scroll li p {
+		background-color: #16a085;
+	}
+	nav.nav_after_scroll li a:hover {
+		color: #34495e;
+		background-color: #F2F2F2;
+		background-color: #ecf0f1;
+	}	
+/* -------------- END: Dynamic header stuff ------------- */
+
+
+
+/*-------------- START: Navigation  --------------*/
+nav {
+	float:right;
+}
+nav ul hr, .projects_section_column hr, .fablab_section_column hr, #helper_section hr {
+	display: none;
+}
+nav ul {
+	list-style: none;
+}
+nav li {
+	display: block;
+	float: left;
+}
+nav li a, nav li p {
+	font-family: Lato, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	padding: 63px 28px 21px;
+	color: #595959;
+}
+nav li p {
+	background-color: #1abc9c;
+	color: #fff;
+}	
+nav li a:hover {
+	background-color: #F2F2F2;
+}
+/*-------------- END: Navigation  --------------*/
+
+
+#wrapper {
+	position: absolute;
+	text-align: center;
+	margin-top:575px;
+	width:100%;
+	
+}
+
+/*-------------- START: Textbox Hero Image  --------------*/
+#hero_image_box {
+	/*background-color: #DDCBC3;*/
+/* 	position:fixed; */
+	padding-top: 100px;
+	background: url("../images/hero_image/box.png") no-repeat center center;
+	background-position: 0px 0px;
+	background-size: 100% auto;
+/* 		position:fixed;
+	background: url("../images/hero_image/box.png") no-repeat 0px 200px;
+	width:100%;
+	height:800px; */
+	
+}
+#hero_image_section_textbox {
+	/*background-color: rgba(255,255,255,.3);*/
+	float: left;
+	padding: 2%; 
+	margin: 5%;
+	width: 350px;
+	overflow: hidden;
+}
+#hero_image_section_textbox h1 {
+	font-size: 3.2em;
+	color:#595959;
+	font-weight: 300;
+	display: inline-block;
+}
+#hero_image_section_textbox .red_button {
+	float: right;
+}
+#hero_image_section_textbox p {
+	font-size: 1.1em;
+	margin-top: 1.2em;
+	/*margin-bottom: 5px;*/
+	line-height: 1.61803398875em;
+}
+/*-------------- END: Textbox Hero Image  --------------*/
+
+
+
+/*-------------- START: helper Section  --------------*/
+.photo_counter {
+	color: #e74c3c;
+	text-align: right;
+}
+.lightbox_photo {
+	border: 1px solid #ddd;
+	background-color: #eee;
+}
+
+#projects_section_bg_color {
+	background-color: #fff;
+}
+#projects_section {
+	margin: 5em 0;
+	text-align: center;	
+}
+
+#projects_section .red_button {
+	margin-top: 2em;
+/*
+		margin: 0 auto;
+		
+		display: inline-block;
+		text-align: center;
+		padding: 1em 1em;
+	
+		border-radius: 3px;
+		box-shadow: 2px 2px 1px rgba(0,0,0,.19);
+		background-color: green;
+		color:#fff;
+		font-size: 1em;
+		text-decoration: none;*/
+}
+#projects_section a {
+	margin: 0 auto;
+}
+#projects_section h2 {
+	margin-bottom: 0.6em;
+	text-align: left;
+}
+#projects_section h4 {
+
+}
+#projects_section p {
+	padding-top: 1.2em;
+}
+#projects_section img {
+	max-width: 90%;
+}
+.projects_section_column {
+	box-sizing: border-box;
+	width: 50%;
+	line-height: 1.5em;
+	float: left;
+}
+.projects_section_column h3 {
+	margin-top: 1em;
+}
+/*-------------- END: helper Section  --------------*/
+
+
+
+/*-------------- START: fablab Section  --------------*/
+#fablab_section_bg_color {
+	background-color: #fff;
+}
+#fablab_section {
+	margin: 5em 0;
+	text-align: center;	
+}
+#fablab_section h2 {
+	margin-bottom: 1.5em;
+}
+#fablab_section p {
+	padding-top: 1.2em;
+}
+#fablab_section img {
+	max-width: 70%;
+}
+.fablab_section_column {
+	box-sizing: border-box;
+	width: 50%;
+	line-height: 1.5em;
+	float: left;
+}
+#fablab_section_column_left {
+	float: right;
+	padding-right: 5%;
+}#fablab_section_column_right {
+	float: left;
+	padding-left: 5%;
+}
+.fablab_section_column h3 {
+	margin-top: 1.2em;
+}
+/*-------------- END: fablab Section  --------------*/
+
+
+
+
+
+/*-------------- START: ITM_section  --------------*/
+#ITM_section_bg_image {
+	/*background-color: pink;*/
+	background: url("../images/bg_images/in_progress.png") no-repeat center center;
+	background-position: 0px 0px;
+	background-size: 100% auto;
+}
+#ITM_section {
+	margin: 5em 0;
+	/*height:400px;*/
+	/*margin: 0 auto;*/
+	float: right;
+	width: 35%;
+	/*padding: 0.5em; */
+	margin: 25% 0 10%;
+	color:#fff;
+}
+#ITM_section h1 {
+	font-size: 3.2em;
+	font-weight: 300;
+	display: inline-block;
+}
+#ITM_section h3 {
+	font-size: 1.1em;
+	margin-top: 1.2em;
+	line-height: 1.61803398875em;	
+}
+/*-------------- END: ITM_section  --------------*/
+
+
+
+/*-------------- START: helper Section  --------------*/
+#helper_section_bg_color {
+	background-color: #fff;
+}
+#helper_section {
+	margin: 5em 0;
+	text-align: center;	
+}
+#helper_section h2 {
+	margin-bottom: 1.61803398875em;
+}
+#helper_section p {
+	padding-top: 1.2em;
+}
+#helper_section img {
+	max-width: 70%;
+	max-width: 350px;
+}
+.helper_section_column {
+	box-sizing: border-box;
+	width: 50%;
+	line-height: 1.5em;
+	float: left;
+}
+#helper_section_column_left {
+	float: right;
+	padding-right: 15%;
+
+}#helper_section_column_right {
+	float: left;
+	padding-left: 15%;
+}
+.helper_section_column h3 {
+	margin-top: 1.2em;
+}
+/*-------------- END: helper Section  --------------*/
+
+
+
+
+/*-------------- START: future_section  --------------*/
+#future_section_bg_color {
+	background-color: #FBFBFB;
+}
+#future_section {
+	margin: 5em 0;
+}
+.future_section_frame {
+	margin: 1.61803398875em 0;
+}
+#future_section h2 {
+	text-align: center;
+	margin-bottom: 1.4em;
+}
+#future_section p {
+	padding-top: 1.2em;
+}
+.future_section_box {
+	box-sizing: border-box;
+	width: 50%;
+	line-height: 1.5em;
+	float: left;
+}
+.future_section_box_left {
+	float: right;
+	padding-right: 5%;
+}
+.future_section_box_right {
+	float: left;
+	padding-left: 5%;
+}
+.future_section_box h3 {
+	margin-top: 1.61803398875em;
+	line-height: 1.4em;
+}
+#future_section h4 {
+	text-align: center;
+	margin-bottom: 0.6em;
+}
+.future_section_box img {
+	max-width: 400px;
+}
+.future_section_box_textbox {
+	max-width: 400px;
+}
+/*-------------- END: future_section  --------------*/
+
+
+
+
+
+
+
+/*-------------- START: footer_section  --------------*/
+#footer_section_bg_image {
+	/*background-color: pink;*/
+	background: url("../images/bg_images/workshop.jpg") no-repeat center center;
+	background-position: 0px 0px;
+	background-size: 100% auto;
+}
+#footer_section {
+	margin: 2em 0;
+	/*height:400px;*/
+	/*margin: 0 auto;*/
+	float: left;
+	width: 35%;
+	/*padding: 0.5em; */
+	/*margin: 25% 0 10%;*/
+	color:#fff;
+}
+#footer_section h1 {
+	font-size: 3.2em;
+	font-weight: 300;
+	display: inline-block;
+}
+#footer_section p {
+	/*font-size: 1.1em;*/
+	margin-top: 1.2em;
+	line-height: 1.61803398875em;	
+}
+/*-------------- END: footer_section  --------------*/
+
+
+
+
+
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+	label, #menu-toggle {
+	  display: none; 
+	}
+
+
+
+
+
+
+
+
+/*-------------- START: Social Icons --------------*/
+#social_icons {
+	float:right;
+	margin-right: 40px;
+	margin-top: 40px;
+}
+#social_icons img {
+	width: 40px;
+	margin: 0 5px;
+}
+/*-------------- END: Social Icons  --------------*/
+
+
+
+
+/* ------------------------------------------------- TABLET ------------------------------------------------- */
+@media only screen and (max-width: 1034px) {
+	.contentwrapper  {
+		width: auto;
+	}
+	#hero_image_section_textbox {
+		bottom: 0;
+		right: 0;
+		padding: 2%; 
+		margin: 2%;
+		width: 300px;
+	}
+	#hero_image{
+		height: 300px;	
+	}
+	nav li a, nav li p {
+		padding: 33px 28px 15px;
+	}
+
+	#logo {
+		display: inline-block;
+		float: left;
+		font-size: 1.7em;
+		/*padding-top: 27px;*/
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+
+}
+
+	/* ------------------------------------------------- PHONE ------------------------------------------------- */
+	@media only screen and (max-width: 722px) {
+		body {
+			font-size: 14px;
+		}
+		#logo {
+			font-size: 1.7em;
+			text-align: center;
+			padding-top: 0.7em;
+			display: block;
+		}
+		nav {
+			display: block;
+			float: none;
+			text-align: center;
+			padding: 0.7em 0 0;
+		}
+		nav ul hr, .project_section_column hr {
+			display: block;
+			border: 0;
+			height: 1px;
+			background-color: #ebebeb;
+		}
+		.project_section_column hr {
+			margin-top: 1.628em;
+		}
+		nav li {
+			display: block;
+			float: none;
+			text-align: center;
+		}
+		nav li a, nav li p {
+			display: block;
+			padding: 1em 0;
+		}	
+		nav li a:active {
+			background-color: #F2F2F2;
+		}
+		
+		
+		.contentwrapper  {
+			padding: 0;
+		}
+		
+		
+		#hero_image {
+			display: none;
+		}	
+		#hero_image_section_textbox {
+			display: block;
+			padding: 0 5% 0.7em;
+		}	
+		#hero_image_section_textbox img {
+			width: 100%;
+			padding: 0 0 1em;
+		}
+		#hero_image_section_textbox p {
+			margin: 0;
+		}
+		label, #menu-toggle {
+		  display: block; 
+		}
+		label {
+		  cursor: pointer;
+			padding: 0.3em 0 0.2em;
+			font-size: 1.1em;
+		}
+		#menu-toggle {
+		  display: none; /* hide the checkbox */
+		}
+		#menu {
+		  display: none;
+		}
+		#menu-toggle:checked + #menu {
+		  display: block;
+		}
+
+		
+		
+		
+			
+		.project_section_column, #text_column_footer {
+			float: none;
+			width: 100%;
+		}
+
+		#footer_section {
+			margin: 0;
+			padding: 5%;
+		}
+		#text_column_footer, #social_icons {
+			float: none;
+			padding: 0;
+			width: 100%;
+			margin: 0;
+		}
+		 #social_icons {
+			margin-top: 1em;
+			text-align: right;
+		}
+	}
