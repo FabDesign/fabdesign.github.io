@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FabDesign</title>
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<script src=".\js\jquery.min.js"></script>
+		<!-- http://jsbin.com/bedilenido/2/edit -->
+		<script type="text/javascript">
+			$(window).scroll(function() {    
+			    var scroll = $(window).scrollTop();
+			    if (scroll >= 100) {
+			        $("#top_bar_box").addClass("light_header");
+			        $("#logo").addClass("logo_after_scroll");
+			        $("nav").addClass("nav_after_scroll");
+			    } else {
+			        $("#top_bar_box").removeClass("light_header");
+			        $("#logo").removeClass("logo_after_scroll");
+			        $("nav").removeClass("nav_after_scroll");
+			    }
+			});
+	function parallax(){
+		var prlx_lyr_1 = document.getElementById('hero_image_box');
+		hero_image_box.style.top = -(window.pageYOffset / 4)+'px';
+	}
+	window.addEventListener("scroll", parallax, false);
+// Google: 
+// add class to nav when scrolling past id
+// http://jsfiddle.net/yrz54fqm/1/
+
+// 			$(window).scroll(function() {    
+// 			    var scroll2 = $(window).scrollTop();
+// 			    var footer_anchor = $('body').find('#ITM_section_bg_image');
+// 			    if (scroll2 >= $(footer_anchor).offset().top {
+// 			        $("#JStest").addClass("JStest_do");
+// 			    } else {
+// 			        $("#JStest").removeClass("JStest_do");
+// 			    }
+// 			});
+
+// http://stackoverflow.com/questions/13864785/add-class-to-anchor-link-when-scrolling-past-anchor-div-jquery
+// $(document).ready(function(){
+//     var sectionITM_section_bg_image = $('#ITM_section_bg_image').height();
+
+//     $(window).scroll(function() {
+//         var winTop = $(window).scrollTop();
+//         if(winTop >= sectionITM_section_bg_image {
+//             $("#JStest").addClass("JStest_do");
+//         } else {
+//             $("#JStest").removeClass("JStest_do");
+//         }
+//     });
+// });
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<link rel="stylesheet" type="text/css" href="./css/lightbox.css">
+	</head>
+
+
+
+<body>
+
+
+<div id="top_bar_box" class="pagewrapper">
+	<div class="contentwrapper">
+		<header class="cledarfix">
+			<div id="logo">
+				<p><span id="logo_FAB">Fab</span><span id="logo_DESIGN">Design</span></p>
+			</div>
+			<nav>
+																<!--<label for="menu-toggle">MENU</label>
+																<input type="checkbox" id="menu-toggle"/>
+																	<ul id="menu" class="clearfix"> -->
+				<ul class="clearfix">
+					<hr>
+					<li><p>Home</p></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#footer_section">About</a></li>
+					<hr>
+				</ul>
+																<!-- <div id="JStest">Test</div> -->
+			</nav>
+		</header>
+	</div>
+</div>
+
+
+<div class="pagewrapper" id="hero_image_box">
+	<div class="contentwrapper">
+		<section>
+			<div id="hero_image_section_textbox" class="clearfix">
+				<h1>Not that easy</h1>
+				<p>I made this toy as a birthday present for a friend's daughter.
+				While she managed the challenge quickly, this box was harder to make than expected. This was the first project where I was using computerized woodworking techniques.</p>
+				<a href="#"><div class="red_button">Read more</div></a>
+			</div>
+		</section>
+
+	</div>
+</div>
+
+<!-- <div class="test">
+<script> for(var i=1; i < 50; i++){ document.write('<h1>This is dummy line '+i+'</h1>'); } </script>
+<script> for(var i=1; i < 50; i++){ document.write('<h1>This is dummy line '+i+'</h1>'); } </script>
+</div> -->
+
+<div id="wrapper">
+
+
+
+<div class="pagewrapper" id="projects_section_bg_color">
+	<div class="contentwrapper">
+		<section id="projects_section">
+			<h2>More completed projects</h2>
+			<a href="#">
+				<div class="projects_section_column clearfix">
+					<div id="projects_section_column_left">					
+						<div class="lightbox_photo">
+							<a class="lightbox_link" href="./images/side_board/side_board_1.jpg" data-lightbox="side_board" data-title="">
+									<img class="lightbox_image" src="./images/side_board/thumb/side_board_thumb.png" title="TV sideboard" alt="TV sideboard"/>		
+									<p class="photo_counter">7 photos.</p>
+							</a>
+							<a class="lightbox_link" href="./images/side_board/side_board_2.jpg" data-lightbox="side_board" data-title=""></a>
+							<a class="lightbox_link" href="./images/side_board/side_board_3.jpg" data-lightbox="side_board" data-title=""></a>
+							<a class="lightbox_link" href="./images/side_board/side_board_4.jpg" data-lightbox="side_board" data-title=""></a>
+							<a class="lightbox_link" href="./images/side_board/side_board_5.jpg" data-lightbox="side_board" data-title=""></a>
+							<a class="lightbox_link" href="./images/side_board/side_board_6.jpg" data-lightbox="side_board" data-title=""></a>
+							<a class="lightbox_link" href="./images/side_board/side_board_7.jpg" data-lightbox="side_board" data-title=""></a>
+						</div>    
+					</div>	
+				</div>
+			</a>
+				<div class="projects_section_column clearfix">
+					<div id="projects_section_column_right">
+						<h4>New place for the TV</h4>
+					</div>
+				</div>
+<!-- 			<a href="#">
+				<div class="button_align">
+					<div class="red_button">See more projects</div>
+				</div>
+			</a> -->
+
+		</section>
+	</div>
+</div>
+
+<div class="pagewrapper" id="fablab_section_bg_color">
+	<div class="contentwrapper">
+		<!-- <hr class="section_divider"> -->
+		<section id="fablab_section" class="clearfix">
+		<h2>Modern woodworking</h2>
+		<!-- <h4>Created for myself or friends</h4> -->
+			<a href="#">
+				<div class="fablab_section_column">
+					<div id="fablab_section_column_left">
+						<img src="./images/fablab/cnc_image.png" title="CNC machine" alt="CNC machine"/>
+						<h3>CNC milling</h3>
+	<!-- 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum do nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p> -->
+						<hr>
+					</div>	
+				</div>
+			</a>
+			<a href="#">
+				<div class="fablab_section_column">
+					<div id="fablab_section_column_right">
+						<img src="./images/fablab/laser_cutter_image.png" title="Laser cutter" alt="Laser cutter"/>
+						<h3>Laser cutting</h3>
+						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p> -->
+						<hr>
+					</div>
+				</div>
+			</a>		
+		</section>
+	</div>
+</div>
+
+
+<div id="ITM_section_bg_image" class="pagewrapper">
+	<div class="darker_by_2">
+		<div class="contentwrapper">
+			<section>
+				<div id="ITM_section" class="clearfix">
+					<h1>Oh what a mess!</h1>
+					<h3>Sometimes things just need to be done in my emergency workshop - the living room.</h3>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="pagewrapper" id="helper_section_bg_color">
+	<div class="contentwrapper">
+		<section id="helper_section" class="clearfix">
+			<h2>For better woodworking: CAD planning &#38; jigs</h2>
+		<!-- <h4>Created for myself or friends</h4> -->
+			<div class="helper_section_column">
+				<div id="helper_section_column_left">
+					<img src="./images/sketchup_box.png" title="Sketching in CAD" alt="Sketching in CAD"/>
+					<h3>Sketching in CAD</h3>
+<!-- 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum do nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p> -->
+					<hr>
+				</div>	
+			</div>
+			<div class="helper_section_column">
+				<div id="helper_section_column_right">
+					<img src="./images/magic_box.png" title="Laser cutter" alt="Laser cutter"/>
+					<h3>Jigs</h3>
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p> -->
+					<hr>
+				</div>
+			</div>			
+		</section>
+	</div>
+</div>
+
+
+
+<div class="pagewrapper" id="future_section_bg_color">
+	<div class="contentwrapper">
+		<hr class="section_divider">
+		<section id="future_section">	
+			<h4>Stay tuned</h4>
+			<h2>Upcoming projects in the near future</h2>
+				<div class="future_section_frame clearfix">
+					<div class="future_section_box">
+						<div class="future_section_box_left">
+							<img src="./images/upcoming_projects/sketchup_disc_golf_fbfbfb.png" title="Disc golf basket" alt="Disc golf basket"/>
+						</div>	
+					</div>
+					<div class="future_section_box">
+						<div class="future_section_box_right future_section_box_textbox">
+							<h3>Disc golf basket design in Sketchup</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+						</div>
+					</div>
+				</div>
+				<div class="future_section_frame">
+					<div class="future_section_box">
+						<div class="future_section_box_left future_section_box_textbox">
+							<h3>Smaller version of the Paulk workbench II</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+						</div>	
+					</div>
+					<div class="future_section_box">
+						<div class="future_section_box_right">
+							<img src="./images/upcoming_projects/sketchup_paulk_fbfbfb.png" title="Small workbench" alt="Small workbench"/>
+						</div>
+					</div>
+				</div>		
+		</section>
+	</div>
+</div>
+
+
+
+
+
+<div id="footer_section_bg_image" class="pagewrapper">
+	<div class="darker_by_4">
+		<div class="contentwrapper">
+			<footer id="footer_section" class="clearfix">
+				<h1>About me</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod idunt ut labore et dolore magna aliqua.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+				<div id="social_icons">
+					<a href="#"><img src="./images/social/social_in.svg" title="LinkedIn" alt="LinkedIn"></a>
+					<a href="#"><img src="./images/social/social_twitter.svg" title="Twitter" alt="Twitter"></a>
+					<a href="#"><img src="./images/social/social_fb.svg" title="Facebook" alt="Facebook"></a>
+				</div>
+			</footer>
+		</div>
+	</div>
+</div>
+
+
+</div>
+<script src=".\js\lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
