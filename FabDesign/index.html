@@ -8,7 +8,7 @@
 		<script type="text/javascript">
 			$(window).scroll(function() {    
 			    var scroll = $(window).scrollTop();
-			    if (scroll >= 100) {
+			    if (scroll >= 250) {
 			        $("#top_bar_box").addClass("light_header");
 			        $("#logo").addClass("logo_after_scroll");
 			        $("nav").addClass("nav_after_scroll");
@@ -17,10 +17,20 @@
 			        $("#logo").removeClass("logo_after_scroll");
 			        $("nav").removeClass("nav_after_scroll");
 			    }
+			    var scroll = $(window).scrollTop();
+			    if (scroll >= 100) {
+			        $("#hero_image_section_textbox").addClass("hide_it");
+			    } else {
+			        $("#hero_image_section_textbox").removeClass("hide_it");
+			    }
 			});
 	function parallax(){
-		var prlx_lyr_1 = document.getElementById('hero_image_box');
-		hero_image_box.style.top = -(window.pageYOffset / 4)+'px';
+		/* var prlx_lyr_1 = document.getElementById('hero_image_box'); 
+		hero_image_box.style.top = -(window.pageYOffset / 4)+'px';*/
+		var ypos, para_image;
+		ypos = window.pageYOffset;
+		para_image = document.getElementById('hero_image_box');
+		para_image.style.top = ypos * .8 + 'px';
 	}
 	window.addEventListener("scroll", parallax, false);
 // Google: 
@@ -64,63 +74,51 @@
 
 <div id="top_bar_box" class="pagewrapper">
 	<div class="contentwrapper">
-		<header class="cledarfix">
+		<header>
 			<div id="logo">
-				<p><span id="logo_FAB">Fab</span><span id="logo_DESIGN">Design</span></p>
+				<img src="./images/fabdesign_logo.png" alt="logo"/>
 			</div>
 			<nav>
-																<!--<label for="menu-toggle">MENU</label>
-																<input type="checkbox" id="menu-toggle"/>
-																	<ul id="menu" class="clearfix"> -->
+			<!--<label for="menu-toggle">MENU</label>
+			<input type="checkbox" id="menu-toggle"/>
+				<ul id="menu" class="clearfix"> -->
 				<ul class="clearfix">
-					<hr>
+					<!-- <hr> -->
 					<li><p>Home</p></li>
 					<li><a href="#">Work</a></li>
 					<li><a href="#">News</a></li>
 					<li><a href="#footer_section">About</a></li>
 					<hr>
 				</ul>
-																<!-- <div id="JStest">Test</div> -->
+			<!-- <div id="JStest">Test</div> -->
 			</nav>
 		</header>
 	</div>
 </div>
 
-
 <div class="pagewrapper" id="hero_image_box">
 	<div class="contentwrapper">
 		<section>
 			<div id="hero_image_section_textbox" class="clearfix">
-				<h1>Not that easy</h1>
-				<p>I made this toy as a birthday present for a friend's daughter.
-				While she managed the challenge quickly, this box was harder to make than expected. This was the first project where I was using computerized woodworking techniques.</p>
-				<a href="#"><div class="red_button">Read more</div></a>
+				<h1>Made in Finland</h1>
+				<p>This page is a collection of my wood working projects. Some of the projects combine traditional wood working techniqes with modern technology as CNCing and laser cutting. Enjoy.</p>
+				<!-- <a href="#"><div class="red_button">Read more</div></a> -->
 			</div>
 		</section>
 
 	</div>
 </div>
 
-<!-- <div class="test">
-<script> for(var i=1; i < 50; i++){ document.write('<h1>This is dummy line '+i+'</h1>'); } </script>
-<script> for(var i=1; i < 50; i++){ document.write('<h1>This is dummy line '+i+'</h1>'); } </script>
-</div> -->
 
-<div id="wrapper">
-
-
-
-<div class="pagewrapper" id="projects_section_bg_color">
+<div class="pagewrapper projects_section_bg_color">
 	<div class="contentwrapper">
-		<section id="projects_section">
-			<h2>More completed projects</h2>
+		<section class="projects_section">
 			<a href="#">
-				<div class="projects_section_column clearfix">
-					<div id="projects_section_column_left">					
+				<div class="projects_section_column projects_section_column_left clearfix">
+					<div>					
 						<div class="lightbox_photo">
 							<a class="lightbox_link" href="./images/side_board/side_board_1.jpg" data-lightbox="side_board" data-title="">
-									<img class="lightbox_image" src="./images/side_board/thumb/side_board_thumb.png" title="TV sideboard" alt="TV sideboard"/>		
-									<p class="photo_counter">7 photos.</p>
+								<img class="lightbox_image" src="./images/side_board/thumb/side_board_thumb.png" title="TV sideboard" alt="TV sideboard"/>
 							</a>
 							<a class="lightbox_link" href="./images/side_board/side_board_2.jpg" data-lightbox="side_board" data-title=""></a>
 							<a class="lightbox_link" href="./images/side_board/side_board_3.jpg" data-lightbox="side_board" data-title=""></a>
@@ -132,34 +130,33 @@
 					</div>	
 				</div>
 			</a>
-				<div class="projects_section_column clearfix">
-					<div id="projects_section_column_right">
-						<h4>New place for the TV</h4>
-					</div>
+				<div class="projects_section_column projects_section_column_right clearfix">
+					<div >
+						<h6>May 2014</h6>
+						<h2>Television side board</h2>
+						<h4>The curved front pieces are blinds for the four fully-extendable drawers. The shadow gaps and round elements were only a few of the techniqes that I learned during this project.</h4>
+						<h5><span style="font-weight: bold">Wood</span>: Birch, pine, MDF</h5>
+						<h5><span style="font-weight: bold">Finish</span>: Osmo white 3111</h5>
+						</div>
 				</div>
 <!-- 			<a href="#">
 				<div class="button_align">
 					<div class="red_button">See more projects</div>
 				</div>
 			</a> -->
-
 		</section>
 	</div>
 </div>
 
-<div class="pagewrapper" id="fablab_section_bg_color">
+<!-- <div class="pagewrapper" id="fablab_section_bg_color">
 	<div class="contentwrapper">
-		<!-- <hr class="section_divider"> -->
 		<section id="fablab_section" class="clearfix">
 		<h2>Modern woodworking</h2>
-		<!-- <h4>Created for myself or friends</h4> -->
 			<a href="#">
 				<div class="fablab_section_column">
 					<div id="fablab_section_column_left">
 						<img src="./images/fablab/cnc_image.png" title="CNC machine" alt="CNC machine"/>
 						<h3>CNC milling</h3>
-	<!-- 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum do nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p> -->
 						<hr>
 					</div>	
 				</div>
@@ -169,17 +166,15 @@
 					<div id="fablab_section_column_right">
 						<img src="./images/fablab/laser_cutter_image.png" title="Laser cutter" alt="Laser cutter"/>
 						<h3>Laser cutting</h3>
-						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p> -->
 						<hr>
 					</div>
 				</div>
 			</a>		
 		</section>
 	</div>
-</div>
+</div> -->
 
-
+<!-- 
 <div id="ITM_section_bg_image" class="pagewrapper">
 	<div class="darker_by_2">
 		<div class="contentwrapper">
@@ -193,20 +188,18 @@
 	</div>
 </div>
 
+ -->
 
-
-
+<!-- 
 <div class="pagewrapper" id="helper_section_bg_color">
 	<div class="contentwrapper">
 		<section id="helper_section" class="clearfix">
 			<h2>For better woodworking: CAD planning &#38; jigs</h2>
-		<!-- <h4>Created for myself or friends</h4> -->
+
 			<div class="helper_section_column">
 				<div id="helper_section_column_left">
 					<img src="./images/sketchup_box.png" title="Sketching in CAD" alt="Sketching in CAD"/>
 					<h3>Sketching in CAD</h3>
-<!-- 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum do nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p> -->
 					<hr>
 				</div>	
 			</div>
@@ -214,18 +207,16 @@
 				<div id="helper_section_column_right">
 					<img src="./images/magic_box.png" title="Laser cutter" alt="Laser cutter"/>
 					<h3>Jigs</h3>
-					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p> -->
 					<hr>
 				</div>
 			</div>			
 		</section>
 	</div>
 </div>
+ -->
 
 
-
-<div class="pagewrapper" id="future_section_bg_color">
+<!-- <div class="pagewrapper" id="future_section_bg_color">
 	<div class="contentwrapper">
 		<hr class="section_divider">
 		<section id="future_section">	
@@ -261,10 +252,10 @@
 				</div>		
 		</section>
 	</div>
-</div>
+</div> -->
 
 
-
+<!-- 
 
 
 <div id="footer_section_bg_image" class="pagewrapper">
@@ -282,10 +273,9 @@
 			</footer>
 		</div>
 	</div>
-</div>
+</div> -->
 
 
-</div>
 <script src=".\js\lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

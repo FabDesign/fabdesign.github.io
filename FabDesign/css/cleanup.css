@@ -1,0 +1,54 @@
+#projects_section .red_button {
+	margin-top: 2em;
+/*
+		margin: 0 auto;
+		
+		display: inline-block;
+		text-align: center;
+		padding: 1em 1em;
+	
+		border-radius: 3px;
+		box-shadow: 2px 2px 1px rgba(0,0,0,.19);
+		background-color: green;
+		color:#fff;
+		font-size: 1em;
+		text-decoration: none;*/
+}		
+		
+		
+		
+		/*-------------- START: fablab Section  --------------*/
+#fablab_section_bg_color {
+	background-color: #fff;
+}
+#fablab_section {
+	margin: 5em 0;
+	text-align: center;	
+}
+#fablab_section h2 {
+	margin-bottom: 1.5em;
+}
+#fablab_section p {
+	padding-top: 1.2em;
+}
+#fablab_section img {
+	max-width: 70%;
+}
+.fablab_section_column {
+	box-sizing: border-box;
+	width: 50%;
+	line-height: 1.5em;
+	float: left;
+}
+#fablab_section_column_left {
+	float: right;
+	padding-right: 5%;
+}#fablab_section_column_right {
+	float: left;
+	padding-left: 5%;
+}
+.fablab_section_column h3 {
+	margin-top: 1.2em;
+}
+/*-------------- END: fablab Section  --------------*/
+
